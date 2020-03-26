@@ -1,8 +1,8 @@
 from pwn import *
-context.log_level = 'debug'
+context.log_level = 'info'
 
-r = remote('111.198.29.45', 44447)
-#r = process('./pwn1')
+#r = remote('111.198.29.45', 44447)
+r = process('./pwn1')
 elf = ELF('./pwn1')
 libc = ELF('./libc-2.23.so')
 
